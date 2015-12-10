@@ -61,7 +61,7 @@ public class MongoRepositoryImpl implements MongoRepository {
     }
     
 	private MongoCollection<Document> getOplog() {
-		return mongoClient.getDatabase(MongoOplog.OPLOG_DATABASE).getCollection(MongoOplog.OPLOG_DATABASE);
+		return mongoClient.getDatabase(MongoOplog.OPLOG_DATABASE).getCollection(MongoOplog.OPLOG_COLLECTION);
 	}
 
 }
